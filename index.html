@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main role="main">
+    <div class="container container-flex">
+      <div class="text-section">
+        <h1>Learn to code by <span class="shrink">watching others</span></h1>
+
+        <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+        but understanding how developers think is invaluable.</p>
+      </div>
+
+      <div class="form-control">
+
+        <div class="bg-accent">
+          <span class="color-white">Try it free 7 days</span> then $20/mo. thereafter
+        </div>
+
+        <form action="#" class="form-controls">
+          <input type="text" name="first" placeholder="First Name" class="firstName">
+          <p class="error-firstName hidden"></p>
+          <input type="text" name="last" placeholder="Last Name" class="lastName">
+          <p class="error-lastName hidden"></p>
+          <input type="email" name="email" placeholder="Email Address" class="email">
+          <p class="error-email hidden"></p>
+          <input type="password" name="password" placeholder="Password" class="password">
+          <p class="error-password hidden"></p>
+          <button class="form-button btn">Claim your free trial </button>
+          <p style="color: #000; ">By clicking the button, you are agreeing to our <span class="color-red">Terms and Services</span></p>
+        </form>       
+
+        
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Egekenze Kelechi</a>.
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

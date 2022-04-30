@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    background-color: hsl(0, 100%, 74%) ;
+    background-image: url("images/bg-intro-mobile.png");
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    color: #fff;
+}
+
+h1 {
+    margin: 0;
+}
+
+.container {
+    margin: 50px auto 25px;
+    width: 90%;
+}
+
+.container-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-section {
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 2em;
+}
+
+.bg-accent {
+    background: hsl(248, 32%, 49%);
+    padding: 1em 4em;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 3px rgb(71, 67, 67);
+    margin-bottom: 2em;
+}
+
+.form-controls {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    text-align: center;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.form-controls input,
+.form-button {
+    padding: 1em;
+    border-radius: 5px;
+}
+
+.form-controls input {
+    outline: none;
+    margin-bottom: .5em;
+}
+
+.btn {
+    border: none;
+}
+
+.form-button {
+    background: hsl(154, 59%, 51%);
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.color-white,
+.form-button,
+::placeholder {
+    font-weight: 700;
+}
+
+.color-red {
+    color: hsl(0, 100%, 74%);
+}
+
+.color-red:hover,
+.color-red:focus {
+    text-decoration: underline;
+}
+
+.error-firstName,
+.error-lastName,
+.error-email,
+.error-password {
+    display: flex;
+    justify-content: flex-end;
+    color: hsl(0, 100%, 74%);
+    margin-top: 0;
+    margin-bottom: 1em;
+    padding: 0;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+@media screen and (min-width: 1020px) and (max-width: 1450px) {
+
+    body {
+        background-image: url('images/bg-intro-desktop.png');
+        background-size: cover;
+    }
+
+    .container {
+        max-width: 1000px;
+    }
+
+    .container-flex {
+        flex-direction: row;
+    }
+
+    h1 {
+        letter-spacing: 3px;
+    }
+
+    .text-section {
+        width: 50%;
+        text-align: start;
+        font-weight: lighter;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-right: 1em;
+    }
+
+    .bg-accent {
+        padding: 1em;
+    }
+
+    .form-control {
+        width: 50%;
+        max-width: 500px;
+    }
+
+    .form-controls {
+        border-radius: 10px;
+        padding: 1.5em;
+    }
+
+    .shrink {
+        display: flex;
+    }
+
+    .error {
+        transform: translate(400px, -35px);
+    }
+}
